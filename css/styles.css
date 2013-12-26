@@ -1,0 +1,362 @@
+/* CONTENTS
+-----------------------------------------
+1. Common Styles
+2. Screen Styles
+3. Media Queries
+4. Print Styles
+*/
+
+/*************************************************************************************
+ * 1. Common Styles
+ ************************************************************************************/
+
+/*@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300|Open+Sans+Condensed:700);
+
+/* apply a natural box layout model to all elements */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.chromeframe {position: absolute; top: 0;}
+
+@-ms-viewport {width:device-width;}
+
+html {
+  width:100%; 
+  margin:0; 
+  padding:0; 
+  font-size:100%; 
+  
+  overflow-y:scroll;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  text-size-adjust:100%;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+}
+
+body {
+  width:100%; 
+  /*margin-top: 7em;*/
+  
+  /*font:1.5em/1.9em Lato, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;*/ 
+  background: #fefefes;
+  
+  color: #222;
+  text-align: center;
+  font-family: 'Ubuntu', Helmet, Freesans, sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-top: 0px;
+  
+  word-wrap: break-word;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display:block;
+  /*border: 1px dotted silver;*/
+}
+
+img{
+  max-width: 100%;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+a:hover {
+  color: #000070;
+  text-decoration: underline ;
+}
+a:active { 
+  color:#fb0e02; 
+}
+
+
+/* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
+
+nav ul {
+  margin: 15px 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  height: 64px;
+}
+
+nav ul li { 
+  display: inline; 
+  
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  /*margin-top: 0;*/
+  
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  /*padding: 0.2em 1em;*/
+  
+}
+
+nav ul li a:hover {
+/*  color: #fff;
+  background-color: #369;*/
+}
+
+
+.healing	{
+  background-color: #FC6E51 ;
+}
+
+.metaisis	{
+  background-color: #AC92EC ;
+}
+
+.aurasoma {
+  background-color: #4FC1E9;
+}
+
+.contact, .home {
+  background-color: #A0D468;
+}
+
+article h3{
+  height: 32px;
+  font-size: 1.5em;
+  padding-top: 0.2em;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------*/
+
+/* using local fonts? make sure to read up on Paul Irish's 
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+/*::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}*/
+/*::selection {background: #fcd700; color: #fff; text-shadow: none;} */
+
+/*	j.mp/webkit-tap-highlight-color */
+/*a:link {-webkit-tap-highlight-color: #fcd700;} */
+
+/*ins {background-color: #fcd700; color: #000; text-decoration: none;}*/
+/*mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}*/
+
+/* Mozilla dosen't style place holders by default */
+/*input:-moz-placeholder { color:#a9a9a9; }*/
+/*textarea:-moz-placeholder { color:#a9a9a9; }*/
+
+
+/*************************************************************************************
+ * 2. Screen Styles
+ ************************************************************************************/
+/* header{
+   text-align: center;
+ }*/
+/* section>header{
+   font-size: 2em;
+   font-weight: bold;
+   margin-top: 1em;
+ }*/
+
+/*************************************************************************************
+ * 3. Media Queries
+ ************************************************************************************/ 
+
+
+@media only screen and (max-width : 20.0625em) {
+
+  .icon-label {
+      display: none;
+      width : 4em;
+  }
+
+}
+
+/* 320px Smartphones (portrait)  */
+/*@media only screen and (max-width : 20.0624em) {
+
+}*/
+
+/* 321px Smartphones (landscape) */
+/*@media only screen and (min-width : 20.0625em) {*/
+
+  /*body{
+    background-color: orange;
+  }*/
+
+
+  /*nav ul li a { */
+      /*width: 63px;*/
+      
+      /* Hide the text. http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/  */
+      /*text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;*/
+      
+      /*text-indent: -100em;*/
+      /*overflow: hidden;*/
+      /*background: url(sample-opaque.gif);*/
+      /*height: 25px;*/
+  /*}*/
+  
+/*}*/
+
+/* 444 
+@media only screen and (max-width:29.4375em) {
+
+  .title{
+    font-size: 2em;
+  }
+}*/
+
+
+/* 471 */
+/*@media only screen and (min-width:29.4375em) {*/
+
+ /* body{
+    background-color: yellow;
+  }*/
+
+
+/*  .title{
+    font-size: 2.35em;
+  }*/
+/*}*/
+
+/* 580 */
+/*@media only screen and (min-width:36.25em) {
+
+  body{
+    background-color: lightyellow;
+  }
+
+  .title{
+    font-size: 2.942em;
+  }
+}*/
+
+/* 700px */
+/*@media only screen and (min-width:43.75em) {
+  
+  .title{
+    font-size: 3.619em;
+  }
+  
+}*/
+
+/* 896px */
+@media only screen and (min-width : 20.0625em) and (max-width:38.250em) {
+  
+  nav ul {
+    margin: 5px 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    height: 3em; /*48px*/
+  }
+  
+  nav ul li { 
+    display: inline; 
+    
+    padding: 1em;
+    font-size: 0.750em;/*12px*/
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    /*margin-top: 0;*/
+    
+    
+  }
+  
+}
+
+/* 896px */
+@media only screen and (min-width : 38.250em) and (max-width:56em) {
+      
+  nav ul {
+    margin: 10px 0 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    height: 3em; /*48px*/
+  }
+  
+  nav ul li { 
+    display: inline; 
+    
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    /*margin-top: 0;*/
+    
+    
+  }
+  
+}
+
+
+
+/* 960px */
+@media only screen and (min-width:60em) {
+  
+  .title{
+    font-size: 5em;
+  }
+  
+}
+
+/* 1180px */
+@media only screen and (min-width:73.75em) {
+  
+  .title{
+    font-size: 6em;
+  }
+  
+}
+
+	
+/*************************************************************************************
+ * 4. Print Styles
+ ************************************************************************************/
+@media print {
+    * {
+        color:#000 !important;
+        box-shadow:none !important;
+        text-shadow:none !important;
+		background:transparent !important;
+    }
+	html { background-color:#fff; }
+	/* Hide navigation */
+	nav { display:none; }
+
+	/* Show link destinations in brackets after the link text */
+	a[href]:after { content: " (" attr(href) ") "; }
+	a[href] {
+		font-weight:bold;
+		text-decoration:underline;
+		color:#06c;
+		border:none;
+	}
+	/* Don't show link destinations for JavaScript or internal links */ 
+	a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+	
+	/* Show abbr title value in brackets after the text */
+	abbr[title]:after { content: " (" attr(title) ")"; }
+
+	figure { 
+		margin-bottom:1em; 
+		overflow:hidden;
+	}
+
+	figure img { border:1px solid #000; }
+}
